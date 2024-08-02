@@ -12,7 +12,7 @@ cd ~/code/project
 
 git clone git@github.com:proofofjogi/install-std.git
 mv install-std/install.sh .
-rm install-std
+rm -r install-std
 sh install.sh
 ```
 
