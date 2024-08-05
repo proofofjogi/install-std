@@ -68,7 +68,13 @@ cat <<EOL > ./src/routes/+layout.svelte
 EOL
 
 
+# prepare pocketbase dev
+mkdir ../backend
+cd ../backend
+
+wget https://github.com/pocketbase/pocketbase/releases/download/v0.22.18/pocketbase_0.22.18_linux_amd64.zip
+unzip pocketbase_0.22.18_linux_amd64.zip
+
+rm pocketbase_0.22.18_linux_amd64.zip
 
 
-# fire VSCode
-code .
