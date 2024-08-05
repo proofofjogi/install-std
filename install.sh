@@ -3,8 +3,9 @@
 # INSTALL SVELTE
 pnpm create svelte@latest frontend
 cd frontend
-
 pnpm install
+
+# dependencies
 
 # install tailwindCSS
 pnpm install -D tailwindcss postcss autoprefixer
@@ -12,6 +13,9 @@ pnpx tailwindcss init -p
 
 # install daisyUI
 pnpm i -D daisyui@latest
+
+# isntall pocketbase sdk
+pnpm install pocketbase --save
 
 # make tailwind files
 rm svelte.config.js
@@ -62,6 +66,7 @@ cat <<EOL > ./src/routes/+layout.svelte
 
 <slot />
 EOL
+
 
 
 
